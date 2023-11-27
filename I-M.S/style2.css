@@ -1,0 +1,150 @@
+
+*,::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 170px;
+    background: var(--bg-color);
+    background-color: blue;
+}
+.logo{
+    color: var(--moin-color);
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+.navbar {
+    display: flex;
+    margin: auto;
+   
+}
+.navbar a{
+    color: var(--twxt-color);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.navbar a:hover{
+    color: var(--moin-color);
+    transition: .4%;
+}
+#menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+.navbar a{
+    padding: 1.5rem;
+    display: block;
+}
+
+.left-form {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    background: #fff url(sty2.jpg) no-repeat;
+    background-size: cover;
+}
+.right-form{
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    float: left;
+  display: flex;
+  justify-content: center;
+}
+.right-form form{
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-form h2{
+    font-size: 2em;
+    color: blue;
+    margin: 20px;
+    font-weight: bold;
+}
+.right-form form > input {
+    width: 100%;
+    padding: 10px 0;
+}
+.right-form label {
+    width: 100%;
+    font-size: 10px;
+    font-weight: 700;
+    margin: 20px 0;
+
+}
+.check {
+    width: 100%;
+    margin: 20px o;
+}
+.right-form input[type="submit"]{
+ width: 100%;
+ background-color: brown;
+ color: azure;
+ border: none;
+ font-size: 18px;
+ padding: 8px 30px;
+}
+@media only screen and (max-width:768px){
+    .left-form {
+        display: none;
+    }
+    .right-form{
+        width: 100%;
+    }
+    .right-form form {
+        width: 95%;
+        padding: 0 1em;
+    }
+}
+@media (max-width: 1140px){
+    #menu-icon {
+        display: initial;
+        color: var(--text-color);
+    }
+    header .navbar {
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: #ff0000;
+        transition: .3%;
+    }
+    header .navbar.active{
+        top: 70px;
+
+    }
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+    }
+}
+@media (max-width:720px){
+    header {
+        padding: 10px 16px;
+    }
+}

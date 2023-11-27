@@ -1,0 +1,229 @@
+
+@import "bootstrap-icons/font/bootstrap-icons";
+
+body {
+
+    background-position: center bottom;
+    font-family: 'Neuton', serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(5, 122, 255);
+    margin: auto;
+    color: #000000;
+}
+ 
+.logo {
+    display: flex;
+    align-items: left;
+}
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+.section-padding {
+    padding: 70px 0;
+}
+.carousel-item{
+    height: 80vh;
+    min-height: 300px;
+}
+.carousel-caption {
+    bottom: 200px;
+    z-index: 2;
+}
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:rgb(0, 30, 82, 0.327);
+    z-index: 1;
+}
+
+.navbar-var a {
+ font-size: 125px;
+ text-transform: uppercase;
+ font-weight: 500;
+ color: rgb(0, 0, 0);
+}
+.navbar-dark .navbar-brand {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+   color: #e71313; 
+}
+.w-100 {
+    height:  100vh;
+
+}
+.navbar-tooggler {
+    padding: 1px 5px;
+    font-size: 10px;
+    line-height: 0.3;
+}
+.services .card-body i {
+    font-size: 50px;
+}
+.team .card-body {
+    font-size: 10px;
+}
+ .card-body   {
+    color: rgb(5, 5, 5);
+    margin: 30%;
+    background-repeat: no-repeat;
+    background-position: 70% 70%;
+    background-size: cover;
+    width: 200px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 3px;
+ }
+
+ .carousel-caption{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card img {
+    height: 200px;
+    width: 150px;
+    border-radius: 2px;
+    align-content: center;
+} 
+    .container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+.card{
+    margin: 50px;
+    height: 280px;
+    width: 280px;
+    box-shadow: 5px 5px 20px;
+    overflow: hidden;
+    background-color: #000000;
+    color: azure;
+   text-underline-position: auto;
+
+}
+ @media ( max-whidth:767){
+    .navbar-var {
+        text-align: center;
+    }
+    .carousel-item {
+        height: 70vh;
+    }
+    .w-100 {
+        height: 70vh;
+    }
+    .carousel-caption {
+        bottom: 125px;
+    }
+    .carousel-caption h5 {
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+        font-size: 15px ;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1,5;
+        font-size: 15px;
+    }
+    .about-text {
+        padding-top: 50px;
+    }
+    .card {
+        margin-bottom: 30px;
+        height: 50px;
+        position: absolute;
+        
+    }
+    .section-padding{
+        padding: 50px 0;
+    } 
+
+ }
+ .modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+    color: #0606ce;
+}
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: rgb(68, 0, 0);
+	background: -moz-linear-gradient(#140000, #999999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+.close {
+	background: #0606ce;
+	color: rgb(39, 0, 146);
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+ }
+ .dialogModal1 {
+    color: #0606ce;
+    pointer-events: auto;
+
+    
+  }
+.close:hover { background: #00d9ff; }
+form{
+    margin: 70px;
+}
+footer {
+    margin: 60px;
+}
